@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/gdc.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waypoint</title>
+    <meta name="description" content="Crie Documentos de Design de Jogo profissionais no seu navegador. Templates prontos por gênero, preview em tempo real e um workflow completo de desenvolvimento indie." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Bibliotecas externas (CDN, versões fixas). Opcionais: sem internet o app continua funcionando —
+         os ícones caem pro conjunto local (js/icons.js) e o Markdown é mostrado como texto puro. -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+
+    <!-- Dados e utilitários (sem dependências de build; carregados como scripts clássicos
+         para funcionar ao abrir este arquivo diretamente via file://) -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/markdown.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/imageStore.js"></script>
+    <script src="js/colorPicker.js"></script>
+    <script src="js/fontStore.js"></script>
+    <script src="js/pdfWriter.js"></script>
+    <script src="js/zipWriter.js"></script>
+    <script src="js/fullscreen.js"></script>
+
+    <!-- Componentes de UI -->
+    <script src="js/ui/header.js"></script>
+    <script src="js/ui/projects.js"></script>
+    <script src="js/ui/builder.js"></script>
+    <script src="js/ui/preview.js"></script>
+    <script src="js/ui/templates.js"></script>
+    <script src="js/ui/kanban.js"></script>
+    <script src="js/ui/xpBalancer.js"></script>
+    <script src="js/ui/lootSimulator.js"></script>
+    <script src="js/ui/economySimulator.js"></script>
+    <script src="js/ui/combatBalance.js"></script>
+    <script src="js/ui/questDesigner.js"></script>
+    <script src="js/ui/probabilityCalc.js"></script>
+    <script src="js/ui/deckBalancer.js"></script>
+    <script src="js/ui/cardDesigner.js"></script>
+    <script src="js/ui/dialogues.js"></script>
+    <script src="js/ui/tools.js"></script>
+    <script src="js/ui/codexGraph.js"></script>
+    <script src="js/ui/codex.js"></script>
+    <script src="js/ui/artDirection.js"></script>
+    <script src="js/ui/notes.js"></script>
+    <script src="js/ui/mural.js"></script>
+    <script src="js/ui/skillTree.js"></script>
+    <script src="js/ui/levelPlanner.js"></script>
+    <script src="js/paperTexture.js"></script>
+    <script src="js/terrainPack.js"></script>
+    <script src="js/stampPack.js"></script>
+    <script src="js/ui/atlas.js"></script>
+    <script src="js/ui/health.js"></script>
+    <script src="js/ui/mdImport.js"></script>
+    <script src="js/ui/backupImport.js"></script>
+    <script src="js/ui/footer.js"></script>
+
+    <!-- Orquestrador principal -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+Ferramentas de linha de comando (Python 3 + Pillow + numpy + scipy) usadas pra gerar js/terrainPack.js
+a partir dos atlas de textura e de pincéis. Não fazem parte do app (o navegador não usa esta pasta).
+
+1. Texturas: recortar cada célula do atlas (grade regular) em tex_raw/rN_cMM.png, depois
+   python3 seamless.py tex_raw tex_seam 256        -> emenda cada textura pra repetir sem costura
+2. Pincéis: python3 cut_brushes.py atlas_pinceis.png br_raw
+   (as faixas de linha ficam na variável `bands`; ajuste se o atlas tiver outra disposição)
+3. python3 build_pack.py tex_seam br_raw ../js/terrainPack.js
+   Linha do atlas -> categoria/comportamento: veja TEX_CATS e brush_meta() em build_pack.py.

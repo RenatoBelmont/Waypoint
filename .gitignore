@@ -1,0 +1,14 @@
+# Cópias antigas trazidas nos zips
+(OLD)/
+*.zip
+
+# Intermediários dos scripts de tools/
+tools/tex_raw/
+tools/tex_seam/
+tools/br_raw/
+__pycache__/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
