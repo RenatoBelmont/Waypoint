@@ -144,7 +144,7 @@
       (opts.harmony ? '<p class="card-designer-color-section-label">Harmonia</p><div class="card-designer-color-harmony-tabs">' +
         HARMONY_SCHEMES.map(function (s) { return '<button type="button" class="card-designer-color-harmony-tab' + (s.id === activeScheme ? ' card-designer-color-harmony-tab-active' : '') + '" data-cp-scheme="' + s.id + '">' + harmonySchemeIconSvg(s) + s.label + '</button>'; }).join('') +
         '</div><div class="card-designer-palette" data-cp-harmony-row></div>' : '');
-    // filho direto do body: fica acima de modais e da tela cheia (que é CSS, js/fullscreen.js)
+    // filho direto do body: fica acima de modais e da tela cheia (que é CSS, js/telaCheia.js)
     document.body.appendChild(pop);
     activePop = pop;
     activeOnClose = function () { var hx = currentHex(); if (opts.onClose) opts.onClose(hx); };

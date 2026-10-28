@@ -650,7 +650,7 @@
     }
   }
 
-  // ---------- Tela cheia (padrão do app: js/fullscreen.js) ----------
+  // ---------- Tela cheia (padrão do app: js/telaCheia.js) ----------
 
   function toggleFullscreen() {
     if (stageEl) GDC.fullscreen.toggle(stageEl);

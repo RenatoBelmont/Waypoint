@@ -35,7 +35,7 @@ já funcionarem e estarem testadas, sem ganho pro usuário na troca: `pdfWriter.
   está em uso" — usadas tanto pela limpeza de órfãs (Saúde) quanto pelo backup completo (storage.js).
   Qualquer módulo novo que guarde id de imagem/fonte precisa ser incluído ali, senão a mídia dele some
   do backup e pode ser apagada como órfã (bug real corrigido no Designer de Cartas).
-- Tela cheia: padrão ÚNICO em `js/fullscreen.js` (`GDC.fullscreen.toggle(stageEl)`, evento
+- Tela cheia: padrão ÚNICO em `js/telaCheia.js` (nome neutro: `fullscreen.js` era bloqueado por bloqueadores de anúncio no GitHub Pages; `GDC.fullscreen.toggle(stageEl)`, evento
   `wpfullscreenchange` no palco, botão via `GDC.fullscreen.buttonMarkup`). É tela cheia dentro da
   página (classe `.wp-fullscreen`, position:fixed cobrindo a janela), NÃO a Fullscreen API do
   navegador/F11 — decisão do Renato, a partir do comportamento de Mapas. Esc sai, a menos que a

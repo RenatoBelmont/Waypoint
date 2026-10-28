@@ -1218,7 +1218,7 @@
     if (toolbarEl) toolbarEl.innerHTML = toolbarInnerMarkup();
   }
 
-  // ---------- Tela cheia (padrão do app: js/fullscreen.js) ----------
+  // ---------- Tela cheia (padrão do app: js/telaCheia.js) ----------
 
   function toggleFullscreen() {
     if (stageEl) GDC.fullscreen.toggle(stageEl);
@@ -1618,7 +1618,7 @@
     var editing = !!ae && (typeof ae.matches === 'function' && ae.matches('input,textarea,select') || ae.isContentEditable);
     if (e.key === 'Escape') {
       // Só "consome" o Esc (preventDefault) se havia algo pra fechar/desfazer — senão o Esc chega na
-      // tela cheia (js/fullscreen.js) e sai dela.
+      // tela cheia (js/telaCheia.js) e sai dela.
       var consumed = !!(openMenu || activeTool !== 'select' || openPanel || selectedIds.length || editing);
       if (openMenu) closeMenu();
       if (activeTool !== 'select') setActiveTool('select');

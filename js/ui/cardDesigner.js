@@ -2510,7 +2510,7 @@
       el.addEventListener('mousedown', function (e) { e.stopPropagation(); });
     }
 
-    // ---------- Tela cheia (padrão do app: js/fullscreen.js) ----------
+    // ---------- Tela cheia (padrão do app: js/telaCheia.js) ----------
     // Se este render substituiu um palco que estava em tela cheia (reset/import), sai dela — senão a
     // página ficaria travada (sem rolagem) apontando pra um elemento que já não existe.
     if (GDC.fullscreen.isActive() && !document.querySelector('.wp-fullscreen')) GDC.fullscreen.exit();
